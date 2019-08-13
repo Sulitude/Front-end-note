@@ -35,7 +35,7 @@
 &emsp;该Cookie的值。如果值为Unicode字符，需要为字符编码。如果值为二进制数据，则需要使用BASE64编码。
 * Domain(string)<br>
 &emsp;域，表示当前Cookie属于那个域或者子域下面<br>
-&emsp;对于服务器返回的Set-Cookie中，如果没有指定Domain的值，那么其Domain的值是默认为当前所提交的http的请求所对应的主域名的。比如访问 http://www.example.com，返回一个cookie，没有指名domain值，那么其为值为默认的www.example.com。
+&emsp;对于服务器返回的Set-Cookie中，如果没有指定Domain的值，那么其Domain的值是默认为当前所提交的http的请求所对应的主域名的。比如访问 `http://www.example.com`，返回一个cookie，没有指名domain值，那么其为值为默认的www.example.com。
 * Path(string)<br>
 &emsp;表示Cookie的所属路径<br>
 * Expire time/Max-age(int)<br>
