@@ -4,7 +4,7 @@
 * [Cookie 简介][Cookie]
 
 ## 链接地址
-[Cookie]: https://github.com/Sulitude/Front-end-note/blob/master/Cookie.md "Cookie 简介"
+[Cookie]: https://github.com/Sulitude/Front-end-note/blob/master/Cookie.md?_blank "Cookie 简介"
 
 
 
