@@ -2,7 +2,7 @@
 前端学习笔记
 ## 目录
 * [HTML](#HTML)
-    * [meta标签](#meta标签)
+    * [meta标签][meta标签]
 * [CSS](#CSS)
     * [盒子水平、垂直居中](#盒子水平、垂直居中)
     * [弹性盒子](#弹性盒子)
@@ -83,46 +83,46 @@ margin：auto；
 ```
 
 ## 弹性盒子
-* 弹性盒子是 CSS3 的一种新的布局模式。
-* CSS3 弹性盒（ Flexible Box 或 flexbox），是一种当页面需要适应不同的屏幕大小以及设备类型时确保元素拥有恰当的行为的布局方式。
-* 引入弹性盒布局模型的目的是提供一种更加有效的方式来对一个容器中的子元素进行排列、对齐和分配空白空间。
-* 弹性盒子由弹性容器(Flex container)和弹性子元素(Flex item)组成。
-* 弹性容器通过设置 display 属性的值为 flex 或 inline-flex将其定义为弹性容器。
-* 弹性容器内包含了一个或多个弹性子元素。
+    * 弹性盒子是 CSS3 的一种新的布局模式。
+    * CSS3 弹性盒（ Flexible Box 或 flexbox），是一种当页面需要适应不同的屏幕大小以及设备类型时确保元素拥有恰当的行为的布局方式。
+    * 引入弹性盒布局模型的目的是提供一种更加有效的方式来对一个容器中的子元素进行排列、对齐和分配空白空间。
+    * 弹性盒子由弹性容器(Flex container)和弹性子元素(Flex item)组成。
+    * 弹性容器通过设置 display 属性的值为 flex 或 inline-flex将其定义为弹性容器。
+    * 弹性容器内包含了一个或多个弹性子元素。
 ### 弹性容器属性
 1. flex-direction
 flex-direction属性指定了弹性子元素在弹性容器中的位置。
-* row：横向从左到右排列（左对齐），默认的排列方式。
-* row-reverse：反转横向排列（右对齐），从后往前排，最后一项排在最前面。
-* column：纵向排列。
-* column-reverse：反转纵向排列，从后往前排，最后一项排在最上面。
+    * row：横向从左到右排列（左对齐），默认的排列方式。
+    * row-reverse：反转横向排列（右对齐），从后往前排，最后一项排在最前面。
+    * column：纵向排列。
+    * column-reverse：反转纵向排列，从后往前排，最后一项排在最上面。
 2. justify-content
 justify-content属性指定弹性子元素沿着弹性容器主轴线(水平)方向的对齐方式。
-* flex-start：默认值。弹性项目位于容器开头。
-* flex-end：弹性项目位于容器结尾。
-* center：弹性项目居中紧挨着填充。（如果剩余的自由空间是负的，则弹性项目将在两个方向上同时溢出）。
-* space-between：弹性项目平均分布在该行上。如果剩余空间为负或者只有一个弹性项，则该值等同于flex-start。否则，第1个弹性项的外边距和行的main-start边线对齐，而最后1个弹性项的外边距和行的main-end边线对齐，然后剩余的弹性项分布在该行上，相邻项目的间隔相等。
-* space-around：弹性项目平均分布在该行上，两边留有一半的间隔空间。如果剩余空间为负或者只有一个弹性项，则该值等同于center。否则，弹性项目沿该行分布，且彼此间隔相等（比如是20px），同时首尾两边和弹性容器之间留有一半的间隔（1/2*20px=10px）。
+    * flex-start：默认值。弹性项目位于容器开头。
+    * flex-end：弹性项目位于容器结尾。
+    * center：弹性项目居中紧挨着填充。（如果剩余的自由空间是负的，则弹性项目将在两个方向上同时溢出）。
+    * space-between：弹性项目平均分布在该行上。如果剩余空间为负或者只有一个弹性项，则该值等同于flex-start。否则，第1个弹性项的外边距和行的main-start边线对齐，而最后1个弹性项的外边距和行的main-end边线对齐，然后剩余的弹性项分布在该行上，相邻项目的间隔相等。
+    * space-around：弹性项目平均分布在该行上，两边留有一半的间隔空间。如果剩余空间为负或者只有一个弹性项，则该值等同于center。否则，弹性项目沿该行分布，且彼此间隔相等（比如是20px），同时首尾两边和弹性容器之间留有一半的间隔（1/2*20px=10px）。
 3. align-items
 align-items 设置或检索弹性盒子元素在侧轴（纵轴）方向上的对齐方式。
-* flex-start：弹性项目位于容器开头。
-* flex-end：弹性项目位于容器结尾。
-* center：弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）。
-* baseline：项目位于容器的基线上。如弹性盒子元素的行内轴与侧轴为同一条，则该值与'flex-start'等效。其它情况下，该值将参与基线对齐。
-* stretch：默认值。如果指定侧轴大小的属性值为'auto'，则其值会使项目的边距盒的尺寸尽可能接近所在行的尺寸，但同时会遵照'min/max-width/height'属性的限制。
+    * flex-start：弹性项目位于容器开头。
+    * flex-end：弹性项目位于容器结尾。
+    * center：弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）。
+    * baseline：项目位于容器的基线上。如弹性盒子元素的行内轴与侧轴为同一条，则该值与'flex-start'等效。其它情况下，该值将参与基线对齐。
+    * stretch：默认值。如果指定侧轴大小的属性值为'auto'，则其值会使项目的边距盒的尺寸尽可能接近所在行的尺寸，但同时会遵照'min/max-width/height'属性的限制。
 4. flex-wrap
 用于指定弹性子元素的换行方式
-* nowrap: 默认， 弹性容器为单行。该情况下弹性子项可能会溢出容器。
-* wrap: 弹性容器为多行。该情况下弹性子项溢出的部分会被放置到新行，子项内部会发生断行
-* wrap-reverse: 反转 wrap 排列。
+    * nowrap: 默认， 弹性容器为单行。该情况下弹性子项可能会溢出容器。
+    * wrap: 弹性容器为多行。该情况下弹性子项溢出的部分会被放置到新行，子项内部会发生断行
+    * wrap-reverse: 反转 wrap 排列。
 5. align-content
 用于修改 flex-wrap 属性的行为。可以理解为垂直方向上的justify-content，但它不是设置弹性子元素的对齐，而是设置各个行的对齐。
-* stretch: 默认。各行将会伸展以占用剩余的空间。
-* flex-start: 各行向弹性盒容器的起始位置堆叠。
-* flex-end: 各行向弹性盒容器的结束位置堆叠。
-* center: 各行向弹性盒容器的中间位置堆叠。
-* space-between: 各行在弹性盒容器中平均分布。
-* space-around: 各行在弹性盒容器中平均分布，两端保留子元素与子元素之间间距大小的一半。
+    * stretch: 默认。各行将会伸展以占用剩余的空间。
+    * flex-start: 各行向弹性盒容器的起始位置堆叠。
+    * flex-end: 各行向弹性盒容器的结束位置堆叠。
+    * center: 各行向弹性盒容器的中间位置堆叠。
+    * space-between: 各行在弹性盒容器中平均分布。
+    * space-around: 各行在弹性盒容器中平均分布，两端保留子元素与子元素之间间距大小的一半。
 ### 弹性子元素属性
 1. order
 用整数值来定义排列顺序，数值小的排在前面。可以为负值。
@@ -130,12 +130,12 @@ align-items 设置或检索弹性盒子元素在侧轴（纵轴）方向上的�
 设置"margin"值为"auto"值，自动获取弹性容器中剩余的空间。所以设置margin值为"auto"，可以使弹性子元素在弹性容器的两轴方向都完全居中
 3. align-self
 用于设置`弹性元素自身`在侧轴（纵轴）方向上的对齐方式。
-* auto：默认值。元素继承了它的父容器的 align-items 属性。如果没有父容器则为 "stretch"。
-* stretch：元素被拉伸以适应容器。
-* flex-start：元素位于容器的开头。
-* flex-end：元素位于容器的结尾。
-* center：弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）。
-* baseline：如弹性盒子元素的行内轴与侧轴为同一条，则该值与'flex-start'等效。其它情况下，该值将参与基线对齐。
+    * auto：默认值。元素继承了它的父容器的 align-items 属性。如果没有父容器则为 "stretch"。
+    * stretch：元素被拉伸以适应容器。
+    * flex-start：元素位于容器的开头。
+    * flex-end：元素位于容器的结尾。
+    * center：弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）。
+    * baseline：如弹性盒子元素的行内轴与侧轴为同一条，则该值与'flex-start'等效。其它情况下，该值将参与基线对齐。
 4. flex-grow
 一个数字，规定项目将相对于其他灵活的项目进行扩展的量。默认值是 0。
 5. flex-shrink
@@ -149,13 +149,13 @@ flex 属性是 flex-grow、flex-shrink 和 flex-basis 属性的简写属性。
 ```css
 flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
 ```
-* flex-grow: 一个数字，规定项目将相对于其他灵活的项目进行扩展的量。
-* flex-shrink: 一个数字，规定项目将相对于其他灵活的项目进行收缩的量。
-* flex-basis: 项目的长度。合法值："auto"、"inherit" 或一个后跟 "%"、"px"、"em" 或任何其他长度单位的数字。
-* auto: 与 1 1 auto 相同。
-* none: 与 0 0 auto 相同。
-* initial: 设置该属性为它的默认值，即为 0 1 auto。
-* inherit: 从父元素继承该属性。
+    * flex-grow: 一个数字，规定项目将相对于其他灵活的项目进行扩展的量。
+    * flex-shrink: 一个数字，规定项目将相对于其他灵活的项目进行收缩的量。
+    * flex-basis: 项目的长度。合法值："auto"、"inherit" 或一个后跟 "%"、"px"、"em" 或任何其他长度单位的数字。
+    * auto: 与 1 1 auto 相同。
+    * none: 与 0 0 auto 相同。
+    * initial: 设置该属性为它的默认值，即为 0 1 auto。
+    * inherit: 从父元素继承该属性。
 
 # JS
 ## let&const&var
@@ -239,3 +239,4 @@ function isWeixin(){
 
 [Cookie&Session]:https://github.com/Sulitude/Front-end-note/blob/master/Cookie.md?_blank "Cookie＆Session简介"
 [同源策略&跨域]:https://github.com/Sulitude/Front-end-note/blob/master/同源策略-跨域.md?_blank "同源策略&跨域简介"
+[meta标签]:https://github.com/Sulitude/Front-end-note/blob/master/meta%E6%A0%87%E7%AD%BE.md "meta标签简介"

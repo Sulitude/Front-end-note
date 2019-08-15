@@ -43,11 +43,10 @@ expires:31 Dec 2008
 &emsp;scheme 属性用于指定要用来翻译属性值的方案。此方案应该在由 <head> 标签的 profile 属性指定的概况文件中进行了定义。
 ## 属性详解
 ### http-equiv
-http-equiv相当于HTTP文档的文件头作用，它可以向浏览器传回一些有用的信息，以帮助浏览器正确的显示网页内容。
+##### http-equiv相当于HTTP文档的文件头作用，它可以向浏览器传回一些有用的信息，以帮助浏览器正确的显示网页内容。
 |值|描述|示例|
 |:---|:---|:---|
-|content-type|设定页面使用的字符集|
-`<meta http-equiv="content-Type" content="text/html; charset=utf-8">`<br>
+|content-type|设定页面使用的字符集|`<meta http-equiv="content-Type" content="text/html; charset=utf-8">`<br>
 GB2312时，代表说明网站是采用的编码是简体中文；<br>
 ISO-8859-1时，代表说明网站是采用的编码是英文；<br>
 UTF-8时，代表世界通用的语言编码；<br>
@@ -77,7 +76,7 @@ max-age：指示客户机可以接收生存期不大于指定时间（以秒为�
 min-fresh：指示客户机可以接收响应时间小于当前时间加上指定时间的响应。<br>
 max-stale：指示客户机可以接收超出超时期间的响应消息。如果指定max-stale消息的值，那么客户机可以接收超出超时期指定值之内的响应消息。|
 ### name
-name属性主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。
+##### name属性主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。
 |值|描述|示例|
 |:---|:---|:---|
 |author|标注网页作者|`<meta name="author" content="dashen" />`|
