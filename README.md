@@ -15,6 +15,8 @@
     * [事件的三个阶段](#事件的三个阶段)
     * [数组乱序](#数组乱序)
     * [判断设备来源](#判断设备来源)
+* [算法](#算法)
+    * [常见排序算法][常见排序算法]
 
 ***
 # HTML
@@ -147,7 +149,8 @@ auto：默认值。长度等于元素的长度。如果该项目未指定长度�
 用于设置或检索弹性盒模型对象的子元素如何分配空间。<br>
 >语法：
 `flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;`
-flex 属性是 flex-grow、flex-shrink 和 flex-basis 属性的简写属性。
+
+##### flex 属性是 flex-grow、flex-shrink 和 flex-basis 属性的简写属性。
     * __flex-grow__: 一个数字，规定项目将相对于其他灵活的项目进行扩展的量。
     * __flex-shrink__: 一个数字，规定项目将相对于其他灵活的项目进行收缩的量。
     * __flex-basis__: 项目的长度。合法值："auto"、"inherit" 或一个后跟 "%"、"px"、"em" 或任何其他长度单位的数字。
@@ -239,3 +242,4 @@ function isWeixin(){
 [Cookie&Session]:https://github.com/Sulitude/Front-end-note/blob/master/Cookie.md?_blank "Cookie＆Session简介"
 [同源策略&跨域]:https://github.com/Sulitude/Front-end-note/blob/master/同源策略-跨域.md?_blank "同源策略&跨域简介"
 [meta标签]:https://github.com/Sulitude/Front-end-note/blob/master/meta%E6%A0%87%E7%AD%BE.md "meta标签简介"
+[常见排序算法]:https://github.com/Sulitude/Front-end-note/blob/master/排序算法.md "常见排序算法"
